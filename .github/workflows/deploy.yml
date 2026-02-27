@@ -24,26 +24,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      # 关键修改：使用正确版本的pnpm（包含alpha后缀）
+      # 使用稳定版 pnpm (关键修改)
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 11.0.0-alpha.11  # 使用您实际返回的alpha版本
+          version: 10.11.1  # 使用稳定版，不是 alpha
 
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
           node-version: 24
-          cache: pnpm  # 重要：指定缓存机制为pnpm
+          cache: pnpm
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      # 关键修改：使用pnpm安装依赖（带--frozen-lockfile）
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # 关键修改：使用pnpm构建
       - name: Build with VitePress
         run: pnpm run docs:build
 
