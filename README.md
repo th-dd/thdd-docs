@@ -16,28 +16,8 @@
 
 ### 环境要求
 
-- Node.js 18+
-- pnpm 8+
-
-### 快速开始
-
-```bash
-# 克隆仓库
-git clone https://github.com/th-dd/thdd-docs.git
-cd thdd-docs
-
-# 安装依赖
-pnpm install
-
-# 启动开发服务器
-pnpm docs:dev
-
-# 构建生产版本
-pnpm docs:build
-
-# 预览构建结果
-pnpm docs:preview
-```
+- Node.js 24
+- pnpm 10
 
 ## 📖 技术栈
 
@@ -47,18 +27,8 @@ pnpm docs:preview
 
 ## 🤝 贡献指南
 
-欢迎贡献文档内容！
-
 - 📝 发送 [Issue](https://github.com/th-dd/thdd-docs/issues) 报告问题或建议
 - 🔧 提交 [Pull Request](https://github.com/th-dd/thdd-docs/pulls) 改进内容
-
-### 贡献步骤
-
-1. Fork 本仓库
-2. 创建新分支 (`git checkout -b feature/your-feature`)
-3. 提交更改 (`git commit -m 'Add some feature'`)
-4. 推送到分支 (`git push origin feature/your-feature`)
-5. 创建 Pull Request
 
 ## 📄 许可协议
 
