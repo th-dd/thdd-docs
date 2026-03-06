@@ -5,6 +5,7 @@
 ## 文档列表
 
 - [指令列表](docs/thbot-commands.md) - QQ机器人指令参考文档
+  link: [https://docs.th-dd.top](https://doc.th-dd.top)
 
 ## 本地开发
 
