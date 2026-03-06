@@ -4,7 +4,7 @@
 
 ---
 
-::: waring
+::: warning
 
 部分指令需要权限才能使用
 
@@ -74,11 +74,18 @@
 | `report-config` | 配置举报功能 |
 | `dialogue` | 触发教学对话 |
 | `teach` | 添加教学对话 |
+| `memes-api` | 制作各种沙雕表情包 |
+| `censure` | 生成谴责文案 |
 
 ---
 
-| `memes-api` | 制作各种沙雕表情包 |
-| `censure` | 生成谴责文案 |
+## AI 功能指令
+
+| 指令 | 说明 |
+|------|------|
+| `ai` | 与AI进行对话 |
+| `ai-config` | 配置AI功能 |
+| `translate` | 使用AI翻译文本 |
 
 ---
 
