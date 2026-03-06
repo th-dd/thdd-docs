@@ -4,6 +4,7 @@ export default defineConfig({
   title: "叹号大帝的文档站",
   description: "叹号旗下各类文档和笔记",
   lang: 'zh-CN',
+  lastUpdated: true,
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
@@ -22,6 +23,10 @@ export default defineConfig({
     ],
     search: {
       provider: 'local'
+    },
+    editLink: {
+      pattern: 'https://github.com/th-dd/thdd-docs/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页'
     }
   }
 })
