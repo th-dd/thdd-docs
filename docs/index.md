@@ -8,10 +8,10 @@ hero:
   tagline: 各种文档和笔记
   actions:
     - theme: brand
-      text: AstrBot 指令列表
-      link: /astrbot-commands
+      text: 指令列表
+      link: /thbot-commands
 
 features:
-  - title: AstrBot 指令
+  - title: 指令列表
     details: QQ机器人指令参考文档，包含群管理、娱乐、AI等功能
 ---
