@@ -6,6 +6,8 @@ export default defineConfig({
   lang: 'zh-CN',
   lastUpdated: true,
   themeConfig: {
+    logo: '/logo.jpg',
+    siteTitle: '叹号大帝',
     nav: [
       { text: '首页', link: '/' },
       { text: '叹号Bot 指令', link: '/thbot-commands' },
