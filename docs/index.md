@@ -10,8 +10,13 @@ hero:
     - theme: brand
       text: 叹号Bot 指令列表
       link: /thbot-commands
+    - theme: alt
+      text: Nova Bot 指令列表
+      link: /nobot-commands
 
 features:
   - title: 叹号Bot 指令
     details: 叹号旗下Bot指令列表，包含群管理、娱乐、AI等功能
+  - title: Nova Bot 指令
+    details: Nova Bot指令列表，包含群管理、娱乐、AI等功能
 ---

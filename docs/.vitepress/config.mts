@@ -11,12 +11,14 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '叹号Bot 指令', link: '/thbot-commands' },
+      { text: 'Nova Bot 指令', link: '/nobot-commands' },
     ],
     sidebar: [
       {
         text: '文档',
         items: [
           { text: '叹号Bot 指令列表', link: '/thbot-commands' },
+          { text: 'Nova Bot 指令列表', link: '/nobot-commands' },
         ]
       }
     ],
