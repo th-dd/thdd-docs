@@ -4,7 +4,7 @@
 
 ## 文档列表
 
-- [指令列表](docs/thbot-commands.md) - QQ机器人指令参考文档
+- [叹号Bot 指令列表](docs/thbot-commands.md) - 叹号旗下Bot指令列表
 
 link: [https://docs.th-dd.top](https://docs.th-dd.top/thbot-commands.html)
 

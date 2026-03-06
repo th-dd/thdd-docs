@@ -8,10 +8,10 @@ hero:
   tagline: 各种文档和笔记
   actions:
     - theme: brand
-      text: 指令列表
+      text: 叹号Bot 指令列表
       link: /thbot-commands
 
 features:
-  - title: 指令列表
-    details: QQ机器人指令参考文档，包含群管理、娱乐、AI等功能
+  - title: 叹号Bot 指令
+    details: 叹号旗下Bot指令列表，包含群管理、娱乐、AI等功能
 ---
