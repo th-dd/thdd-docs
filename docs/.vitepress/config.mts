@@ -70,7 +70,7 @@ export default withMermaid(
       },
       footer: {
         message: '基于 MIT 许可发布',
-        copyright: 'Copyright © 2024-present 叹号大帝'
+        copyright: 'Copyright © 2026-present 叹号大帝'
       },
       docFooter: {
         prev: '上一页',
