@@ -1,0 +1,25 @@
+/* 自定义 tip 容器颜色为绿色 */
+.custom-block.tip {
+  --vp-c-tip-1: #10b981;
+  --vp-c-tip-2: #059669;
+  --vp-c-tip-3: #047857;
+  --vp-c-tip-soft: rgba(16, 185, 129, 0.14);
+  border-color: var(--vp-c-tip-1);
+  background-color: var(--vp-c-tip-soft);
+}
+
+.custom-block.tip .custom-block-title {
+  color: var(--vp-c-tip-1);
+}
+
+.custom-block.tip code {
+  color: var(--vp-c-tip-1);
+}
+
+/* 深色模式下的 tip 颜色 */
+.dark .custom-block.tip {
+  --vp-c-tip-1: #34d399;
+  --vp-c-tip-2: #10b981;
+  --vp-c-tip-3: #059669;
+  --vp-c-tip-soft: rgba(52, 211, 153, 0.14);
+}
