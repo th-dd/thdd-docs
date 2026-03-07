@@ -362,3 +362,41 @@
 .dark ::selection {
   background: rgba(52, 211, 153, 0.3);
 }
+
+/* ==================== 图片缩放 (medium-zoom) ==================== */
+.medium-zoom-overlay {
+  z-index: 20;
+}
+
+.medium-zoom-image--opened {
+  z-index: 21;
+}
+
+/* 图片悬停效果 */
+.vp-doc img {
+  cursor: zoom-in;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.vp-doc img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.2);
+}
+
+.dark .vp-doc img:hover {
+  box-shadow: 0 8px 30px rgba(52, 211, 153, 0.15);
+}
+
+/* ==================== Mermaid 图表样式 ==================== */
+.mermaid {
+  text-align: center;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(16, 185, 129, 0.03);
+  border-radius: 12px;
+}
+
+.dark .mermaid {
+  background: rgba(52, 211, 153, 0.05);
+}
