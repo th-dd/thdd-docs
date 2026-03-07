@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
 export default withMermaid(
   defineConfig({
@@ -14,6 +15,15 @@ export default withMermaid(
     // Markdown 配置
     markdown: {
       lineNumbers: true,
+      config: (md) => {
+        md.use(groupIconMdPlugin)
+      },
+    },
+    // Vite 配置
+    vite: {
+      plugins: [
+        groupIconVitePlugin(),
+      ],
     },
     themeConfig: {
       logo: '/logo.jpg',

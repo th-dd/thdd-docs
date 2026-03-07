@@ -2,7 +2,8 @@
   "devDependencies": {
     "vitepress": "2.0.0-alpha.16",
     "medium-zoom": "^1.1.0",
-    "vitepress-plugin-mermaid": "^2.0.17"
+    "vitepress-plugin-mermaid": "^2.0.17",
+    "vitepress-plugin-group-icons": "^1.6.3"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
