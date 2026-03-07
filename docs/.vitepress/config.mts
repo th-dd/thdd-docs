@@ -1,9 +1,5 @@
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
-import {
-  GitChangelog,
-  GitChangelogMarkdownSection,
-} from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 export default withMermaid(
   defineConfig({
@@ -18,15 +14,6 @@ export default withMermaid(
     // Markdown 配置
     markdown: {
       lineNumbers: true,
-    },
-    // Vite 配置
-    vite: {
-      plugins: [
-        GitChangelog({
-          repoURL: 'https://github.com/th-dd/thdd-docs',
-        }),
-        GitChangelogMarkdownSection(),
-      ],
     },
     themeConfig: {
       logo: '/logo.jpg',
