@@ -1,11 +1,217 @@
-/* 自定义 tip 容器颜色为绿色 */
+/* ==================== 主题色配置 ==================== */
+:root {
+  /* 主色调 - 使用绿色系 */
+  --vp-c-brand-1: #10b981;
+  --vp-c-brand-2: #059669;
+  --vp-c-brand-3: #047857;
+  --vp-c-brand-soft: rgba(16, 185, 129, 0.14);
+
+  /* 按钮渐变 */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-bg: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+}
+
+.dark {
+  --vp-c-brand-1: #34d399;
+  --vp-c-brand-2: #10b981;
+  --vp-c-brand-3: #059669;
+  --vp-c-brand-soft: rgba(52, 211, 153, 0.14);
+}
+
+/* ==================== 首页 Hero 美化 ==================== */
+.VPHero {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(16, 185, 129, 0.03) 50%,
+    rgba(16, 185, 129, 0.05) 100%
+  );
+}
+
+.dark .VPHero {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(52, 211, 153, 0.05) 50%,
+    rgba(52, 211, 153, 0.08) 100%
+  );
+}
+
+/* Hero 标题渐变 */
+.VPHero .name {
+  background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .VPHero .name {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero 按钮 */
+.VPHero .action {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.VPHero .action:hover {
+  transform: translateY(-2px);
+}
+
+.VPHero .VPButton.brand {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border: none;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease;
+}
+
+.VPHero .VPButton.brand:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ==================== 导航栏美化 ==================== */
+.VPNav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.VPNavBar {
+  border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+}
+
+.dark .VPNavBar {
+  border-bottom: 1px solid rgba(52, 211, 153, 0.1);
+}
+
+/* Logo 动画 */
+.VPNavBarTitle .logo {
+  transition: transform 0.3s ease;
+}
+
+.VPNavBarTitle:hover .logo {
+  transform: rotate(-5deg) scale(1.05);
+}
+
+/* 导航链接悬停效果 */
+.VPNavBarMenuLink:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.VPNavBarMenuLink::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #10b981, #059669);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.VPNavBarMenuLink:hover::after {
+  width: 80%;
+}
+
+/* ==================== 侧边栏美化 ==================== */
+.VPSidebar {
+  border-right: 1px solid rgba(16, 185, 129, 0.08);
+}
+
+.dark .VPSidebar {
+  border-right: 1px solid rgba(52, 211, 153, 0.08);
+}
+
+/* 侧边栏链接悬停 */
+.VPSidebarItem .link:hover {
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.08), transparent);
+}
+
+.dark .VPSidebarItem .link:hover {
+  background: linear-gradient(90deg, rgba(52, 211, 153, 0.08), transparent);
+}
+
+/* 活动链接 */
+.VPSidebarItem.is-active .link {
+  color: var(--vp-c-brand-1);
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.1), transparent);
+  border-left: 3px solid var(--vp-c-brand-1);
+}
+
+.dark .VPSidebarItem.is-active .link {
+  background: linear-gradient(90deg, rgba(52, 211, 153, 0.1), transparent);
+}
+
+/* ==================== 表格美化 ==================== */
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dark .vp-doc table {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.vp-doc th {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05));
+  font-weight: 600;
+}
+
+.dark .vp-doc th {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.15), rgba(16, 185, 129, 0.05));
+}
+
+.vp-doc tr:hover {
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.dark .vp-doc tr:hover {
+  background: rgba(52, 211, 153, 0.08);
+}
+
+/* ==================== 代码块美化 ==================== */
+.vp-doc [class*='language-'] {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark .vp-doc [class*='language-'] {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 行内代码 */
+.vp-doc :not(pre) > code {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--vp-c-brand-2);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.dark .vp-doc :not(pre) > code {
+  background: rgba(52, 211, 153, 0.15);
+  color: var(--vp-c-brand-1);
+}
+
+/* ==================== Tip 容器美化 ==================== */
 .custom-block.tip {
   --vp-c-tip-1: #10b981;
   --vp-c-tip-2: #059669;
   --vp-c-tip-3: #047857;
-  --vp-c-tip-soft: rgba(16, 185, 129, 0.14);
+  --vp-c-tip-soft: rgba(16, 185, 129, 0.1);
   border-color: var(--vp-c-tip-1);
   background-color: var(--vp-c-tip-soft);
+  border-radius: 12px;
+  border-left-width: 4px;
 }
 
 .custom-block.tip .custom-block-title {
@@ -16,10 +222,143 @@
   color: var(--vp-c-tip-1);
 }
 
-/* 深色模式下的 tip 颜色 */
 .dark .custom-block.tip {
   --vp-c-tip-1: #34d399;
   --vp-c-tip-2: #10b981;
   --vp-c-tip-3: #059669;
-  --vp-c-tip-soft: rgba(52, 211, 153, 0.14);
+  --vp-c-tip-soft: rgba(52, 211, 153, 0.12);
+}
+
+/* Warning 容器 */
+.custom-block.warning {
+  border-radius: 12px;
+  border-left-width: 4px;
+}
+
+/* Danger 容器 */
+.custom-block.danger {
+  border-radius: 12px;
+  border-left-width: 4px;
+}
+
+/* Info 容器 */
+.custom-block.info {
+  border-radius: 12px;
+  border-left-width: 4px;
+}
+
+/* ==================== 页脚美化 ==================== */
+.VPFooter {
+  background: linear-gradient(180deg, transparent, rgba(16, 185, 129, 0.03));
+  border-top: 1px solid rgba(16, 185, 129, 0.1);
+}
+
+.dark .VPFooter {
+  background: linear-gradient(180deg, transparent, rgba(52, 211, 153, 0.05));
+  border-top: 1px solid rgba(52, 211, 153, 0.1);
+}
+
+/* ==================== 滚动条美化 ==================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(52, 211, 153, 0.3);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(52, 211, 153, 0.5);
+}
+
+/* ==================== 链接美化 ==================== */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  position: relative;
+}
+
+.vp-doc a::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--vp-c-brand-1);
+  transition: width 0.3s ease;
+}
+
+.vp-doc a:hover::after {
+  width: 100%;
+}
+
+/* ==================== 搜索框美化 ==================== */
+.VPLocalSearchBox {
+  border-radius: 12px;
+}
+
+.DocSearch-Button {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.DocSearch-Button:hover {
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.2);
+}
+
+/* ==================== 动画效果 ==================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  animation: fadeInUp 0.5s ease;
+}
+
+/* Feature 卡片动画 */
+.VPFeature {
+  transition: all 0.3s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.15);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 12px 30px rgba(52, 211, 153, 0.1);
+}
+
+/* ==================== 选择文本颜色 ==================== */
+::selection {
+  background: rgba(16, 185, 129, 0.3);
+  color: inherit;
+}
+
+.dark ::selection {
+  background: rgba(52, 211, 153, 0.3);
 }
