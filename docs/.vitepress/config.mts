@@ -30,7 +30,7 @@ export default withMermaid(
       siteTitle: '叹号大帝',
       nav: [
         { text: '🏠 首页', link: '/' },
-        { text: '🚀 从这里开始', link: '/getting-started' },
+        { text: '🚀 从这里开始', link: '/start' },
         { text: '🤖 叹号Bot', link: '/thbot-commands' },
         { text: '🚀 Nova Bot', link: '/nobot-commands' },
       ],
@@ -38,7 +38,7 @@ export default withMermaid(
         {
           text: '📖 文档',
           items: [
-            { text: '🚀 从这里开始', link: '/getting-started' },
+            { text: '🚀 从这里开始', link: '/start' },
             { text: '🤖 叹号Bot 指令列表', link: '/thbot-commands' },
             { text: '🚀 Nova Bot 指令列表', link: '/nobot-commands' },
           ]
@@ -72,7 +72,7 @@ export default withMermaid(
       },
       footer: {
         message: '基于 MIT 许可发布',
-        copyright: 'Copyright © 2026-present 叹号大帝'
+        copyright: 'Copyright © 2024-present 叹号大帝'
       },
       docFooter: {
         prev: '上一页',

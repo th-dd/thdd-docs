@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 🚀 从这里开始
-      link: /getting-started
+      link: /start
     - theme: alt
       text: 🤖 叹号Bot 指令
       link: /thbot-commands
