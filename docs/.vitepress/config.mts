@@ -36,7 +36,7 @@ export default withMermaid(
     title: "叹号大帝的文档站",
     description: "叹号旗下各类文档和笔记",
     lang: 'zh-CN',
-    lastUpdated: true,
+    lastUpdated: false, // 禁用默认的 lastUpdated，使用自定义组件
     head: [
       ['link', { rel: 'icon', href: '/logo.jpg' }],
       ['meta', { name: 'theme-color', content: '#f97316' }],
@@ -119,13 +119,6 @@ export default withMermaid(
       },
       outline: {
         label: '页面导航'
-      },
-      lastUpdated: {
-        text: '最后更新于',
-        formatOptions: {
-          dateStyle: 'short',
-          timeStyle: 'short'
-        }
       }
     },
     // Mermaid 配置

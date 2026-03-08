@@ -27,10 +27,10 @@ export default {
       () => nextTick(() => initZoom())
     )
   },
-  // 使用 Layout 插槽添加自定义组件
+  // 使用 doc-footer-before 插槽，显示在原来的位置
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'doc-after': () => h(GitLastUpdated)
+      'doc-footer-before': () => h(GitLastUpdated)
     })
   }
 }

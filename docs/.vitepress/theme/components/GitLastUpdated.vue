@@ -33,9 +33,9 @@ const commitUrl = computed(() => {
 
 <template>
   <div class="git-last-updated" v-if="formattedDate">
-    <span class="label">最后由</span>
+    <span class="prefix">最后由</span>
     <span class="author">{{ gitInfo.author }}</span>
-    <span class="label">更新于</span>
+    <span class="prefix">更新于</span>
     <a 
       v-if="commitUrl" 
       :href="commitUrl" 
@@ -56,14 +56,11 @@ const commitUrl = computed(() => {
   align-items: center;
   flex-wrap: wrap;
   gap: 4px;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--vp-c-divider);
   font-size: 0.875rem;
   color: var(--vp-c-text-2);
 }
 
-.label {
+.prefix {
   color: var(--vp-c-text-3);
 }
 
