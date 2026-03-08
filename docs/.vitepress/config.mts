@@ -30,6 +30,7 @@ export default withMermaid(
       siteTitle: '叹号大帝',
       nav: [
         { text: '🏠 首页', link: '/' },
+        { text: '🚀 从此开始', link: '/getting-started' },
         { text: '🤖 叹号Bot', link: '/thbot-commands' },
         { text: '🚀 Nova Bot', link: '/nobot-commands' },
       ],
@@ -37,6 +38,7 @@ export default withMermaid(
         {
           text: '📖 文档',
           items: [
+            { text: '🚀 从此开始', link: '/getting-started' },
             { text: '🤖 叹号Bot 指令列表', link: '/thbot-commands' },
             { text: '🚀 Nova Bot 指令列表', link: '/nobot-commands' },
           ]
