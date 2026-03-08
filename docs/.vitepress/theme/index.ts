@@ -1,7 +1,8 @@
 import DefaultTheme from 'vitepress/theme'
 import mediumZoom from 'medium-zoom'
-import { onMounted, watch, nextTick } from 'vue'
+import { onMounted, watch, nextTick, h } from 'vue'
 import { useRoute } from 'vitepress'
+import GitLastUpdated from './components/GitLastUpdated.vue'
 import './custom.css'
 
 export default {
@@ -25,5 +26,11 @@ export default {
       () => route.path,
       () => nextTick(() => initZoom())
     )
+  },
+  // 使用 Layout 插槽添加自定义组件
+  Layout: () => {
+    return h(DefaultTheme.Layout, null, {
+      'doc-after': () => h(GitLastUpdated)
+    })
   }
 }

@@ -1,6 +1,35 @@
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import { execSync } from 'child_process'
+import { resolve } from 'path'
+
+// 获取文件的 git 信息
+function getGitInfo(filePath: string) {
+  try {
+    const cwd = process.cwd()
+    const fullPath = resolve(cwd, 'docs', filePath)
+    
+    const author = execSync(
+      `git log -1 --format="%an" -- "${fullPath}"`,
+      { encoding: 'utf-8', cwd }
+    ).trim()
+    
+    const date = execSync(
+      `git log -1 --format="%ci" -- "${fullPath}"`,
+      { encoding: 'utf-8', cwd }
+    ).trim()
+    
+    const hash = execSync(
+      `git log -1 --format="%H" -- "${fullPath}"`,
+      { encoding: 'utf-8', cwd }
+    ).trim()
+    
+    return { author, date, hash }
+  } catch (e) {
+    return { author: 'Unknown', date: '', hash: '' }
+  }
+}
 
 export default withMermaid(
   defineConfig({
@@ -24,6 +53,16 @@ export default withMermaid(
       plugins: [
         groupIconVitePlugin(),
       ],
+    },
+    // 处理页面数据，添加 git 信息
+    transformPageData(pageData) {
+      const filePath = pageData.relativePath
+      if (filePath) {
+        const gitInfo = getGitInfo(filePath)
+        pageData.frontmatter.gitAuthor = gitInfo.author
+        pageData.frontmatter.gitDate = gitInfo.date
+        pageData.frontmatter.gitHash = gitInfo.hash
+      }
     },
     themeConfig: {
       logo: '/logo.jpg',
