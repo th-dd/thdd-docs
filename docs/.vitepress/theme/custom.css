@@ -1,25 +1,25 @@
-/* ==================== 主题色配置 ==================== */
+/* ==================== 主题色配置 - 彩色渐变 ==================== */
 :root {
-  /* 主色调 - 使用绿色系 */
-  --vp-c-brand-1: #10b981;
-  --vp-c-brand-2: #059669;
-  --vp-c-brand-3: #047857;
-  --vp-c-brand-soft: rgba(16, 185, 129, 0.14);
+  /* 主色调 - 使用橙色到粉色渐变 */
+  --vp-c-brand-1: #f97316;
+  --vp-c-brand-2: #ea580c;
+  --vp-c-brand-3: #c2410c;
+  --vp-c-brand-soft: rgba(249, 115, 22, 0.14);
 
-  /* 按钮渐变 */
+  /* 按钮渐变 - 彩色 */
   --vp-button-brand-border: transparent;
   --vp-button-brand-text: #fff;
-  --vp-button-brand-bg: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --vp-button-brand-bg: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
   --vp-button-brand-hover-border: transparent;
   --vp-button-brand-hover-text: #fff;
-  --vp-button-brand-hover-bg: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  --vp-button-brand-hover-bg: linear-gradient(135deg, #fb923c 0%, #f472b6 100%);
 }
 
 .dark {
-  --vp-c-brand-1: #34d399;
-  --vp-c-brand-2: #10b981;
-  --vp-c-brand-3: #059669;
-  --vp-c-brand-soft: rgba(52, 211, 153, 0.14);
+  --vp-c-brand-1: #fb923c;
+  --vp-c-brand-2: #f97316;
+  --vp-c-brand-3: #ea580c;
+  --vp-c-brand-soft: rgba(251, 146, 60, 0.14);
 }
 
 /* ==================== 首页 Hero 美化 ==================== */
@@ -27,8 +27,8 @@
   background: linear-gradient(
     180deg,
     transparent 0%,
-    rgba(16, 185, 129, 0.03) 50%,
-    rgba(16, 185, 129, 0.05) 100%
+    rgba(249, 115, 22, 0.03) 50%,
+    rgba(236, 72, 153, 0.05) 100%
   );
 }
 
@@ -36,21 +36,21 @@
   background: linear-gradient(
     180deg,
     transparent 0%,
-    rgba(52, 211, 153, 0.05) 50%,
-    rgba(52, 211, 153, 0.08) 100%
+    rgba(251, 146, 60, 0.05) 50%,
+    rgba(244, 114, 182, 0.08) 100%
   );
 }
 
-/* Hero 标题渐变 */
+/* Hero 标题渐变 - 彩色 */
 .VPHero .name {
-  background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+  background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .dark .VPHero .name {
-  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
+  background: linear-gradient(135deg, #fb923c 0%, #f472b6 50%, #a78bfa 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -66,15 +66,15 @@
 }
 
 .VPHero .VPButton.brand {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
   border: none;
-  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
   transition: all 0.3s ease;
 }
 
 .VPHero .VPButton.brand:hover {
-  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, #fb923c 0%, #f472b6 100%);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
   transform: translateY(-2px);
 }
 
@@ -85,11 +85,11 @@
 }
 
 .VPNavBar {
-  border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+  border-bottom: 1px solid rgba(249, 115, 22, 0.1);
 }
 
 .dark .VPNavBar {
-  border-bottom: 1px solid rgba(52, 211, 153, 0.1);
+  border-bottom: 1px solid rgba(251, 146, 60, 0.1);
 }
 
 /* Logo 动画 */
@@ -113,7 +113,7 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #10b981, #059669);
+  background: linear-gradient(90deg, #f97316, #ec4899);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -124,31 +124,31 @@
 
 /* ==================== 侧边栏美化 ==================== */
 .VPSidebar {
-  border-right: 1px solid rgba(16, 185, 129, 0.08);
+  border-right: 1px solid rgba(249, 115, 22, 0.08);
 }
 
 .dark .VPSidebar {
-  border-right: 1px solid rgba(52, 211, 153, 0.08);
+  border-right: 1px solid rgba(251, 146, 60, 0.08);
 }
 
 /* 侧边栏链接悬停 */
 .VPSidebarItem .link:hover {
-  background: linear-gradient(90deg, rgba(16, 185, 129, 0.08), transparent);
+  background: linear-gradient(90deg, rgba(249, 115, 22, 0.08), transparent);
 }
 
 .dark .VPSidebarItem .link:hover {
-  background: linear-gradient(90deg, rgba(52, 211, 153, 0.08), transparent);
+  background: linear-gradient(90deg, rgba(251, 146, 60, 0.08), transparent);
 }
 
 /* 活动链接 */
 .VPSidebarItem.is-active .link {
   color: var(--vp-c-brand-1);
-  background: linear-gradient(90deg, rgba(16, 185, 129, 0.1), transparent);
+  background: linear-gradient(90deg, rgba(249, 115, 22, 0.1), transparent);
   border-left: 3px solid var(--vp-c-brand-1);
 }
 
 .dark .VPSidebarItem.is-active .link {
-  background: linear-gradient(90deg, rgba(52, 211, 153, 0.1), transparent);
+  background: linear-gradient(90deg, rgba(251, 146, 60, 0.1), transparent);
 }
 
 /* ==================== 表格美化 ==================== */
@@ -163,20 +163,20 @@
 }
 
 .vp-doc th {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05));
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(236, 72, 153, 0.05));
   font-weight: 600;
 }
 
 .dark .vp-doc th {
-  background: linear-gradient(135deg, rgba(52, 211, 153, 0.15), rgba(16, 185, 129, 0.05));
+  background: linear-gradient(135deg, rgba(251, 146, 60, 0.15), rgba(244, 114, 182, 0.05));
 }
 
 .vp-doc tr:hover {
-  background: rgba(16, 185, 129, 0.05);
+  background: rgba(249, 115, 22, 0.05);
 }
 
 .dark .vp-doc tr:hover {
-  background: rgba(52, 211, 153, 0.08);
+  background: rgba(251, 146, 60, 0.08);
 }
 
 /* ==================== 代码块美化 ==================== */
@@ -191,23 +191,23 @@
 
 /* 行内代码 */
 .vp-doc :not(pre) > code {
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(249, 115, 22, 0.1);
   color: var(--vp-c-brand-2);
   border-radius: 4px;
   padding: 2px 6px;
 }
 
 .dark .vp-doc :not(pre) > code {
-  background: rgba(52, 211, 153, 0.15);
+  background: rgba(251, 146, 60, 0.15);
   color: var(--vp-c-brand-1);
 }
 
 /* ==================== Tip 容器美化 ==================== */
 .custom-block.tip {
-  --vp-c-tip-1: #10b981;
-  --vp-c-tip-2: #059669;
-  --vp-c-tip-3: #047857;
-  --vp-c-tip-soft: rgba(16, 185, 129, 0.1);
+  --vp-c-tip-1: #f97316;
+  --vp-c-tip-2: #ea580c;
+  --vp-c-tip-3: #c2410c;
+  --vp-c-tip-soft: rgba(249, 115, 22, 0.1);
   border-color: var(--vp-c-tip-1);
   background-color: var(--vp-c-tip-soft);
   border-radius: 12px;
@@ -223,10 +223,10 @@
 }
 
 .dark .custom-block.tip {
-  --vp-c-tip-1: #34d399;
-  --vp-c-tip-2: #10b981;
-  --vp-c-tip-3: #059669;
-  --vp-c-tip-soft: rgba(52, 211, 153, 0.12);
+  --vp-c-tip-1: #fb923c;
+  --vp-c-tip-2: #f97316;
+  --vp-c-tip-3: #ea580c;
+  --vp-c-tip-soft: rgba(251, 146, 60, 0.12);
 }
 
 /* Warning 容器 */
@@ -249,13 +249,13 @@
 
 /* ==================== 页脚美化 ==================== */
 .VPFooter {
-  background: linear-gradient(180deg, transparent, rgba(16, 185, 129, 0.03));
-  border-top: 1px solid rgba(16, 185, 129, 0.1);
+  background: linear-gradient(180deg, transparent, rgba(249, 115, 22, 0.03));
+  border-top: 1px solid rgba(249, 115, 22, 0.1);
 }
 
 .dark .VPFooter {
-  background: linear-gradient(180deg, transparent, rgba(52, 211, 153, 0.05));
-  border-top: 1px solid rgba(52, 211, 153, 0.1);
+  background: linear-gradient(180deg, transparent, rgba(251, 146, 60, 0.05));
+  border-top: 1px solid rgba(251, 146, 60, 0.1);
 }
 
 /* ==================== 滚动条美化 ==================== */
@@ -269,20 +269,20 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(16, 185, 129, 0.3);
+  background: rgba(249, 115, 22, 0.3);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(16, 185, 129, 0.5);
+  background: rgba(249, 115, 22, 0.5);
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: rgba(52, 211, 153, 0.3);
+  background: rgba(251, 146, 60, 0.3);
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: rgba(52, 211, 153, 0.5);
+  background: rgba(251, 146, 60, 0.5);
 }
 
 /* ==================== 链接美化 ==================== */
@@ -299,7 +299,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--vp-c-brand-1);
+  background: linear-gradient(90deg, #f97316, #ec4899);
   transition: width 0.3s ease;
 }
 
@@ -318,7 +318,7 @@
 }
 
 .DocSearch-Button:hover {
-  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 2px 10px rgba(249, 115, 22, 0.2);
 }
 
 /* ==================== 动画效果 ==================== */
@@ -346,21 +346,21 @@
 
 .VPFeature:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 12px 30px rgba(249, 115, 22, 0.15);
 }
 
 .dark .VPFeature:hover {
-  box-shadow: 0 12px 30px rgba(52, 211, 153, 0.1);
+  box-shadow: 0 12px 30px rgba(251, 146, 60, 0.1);
 }
 
 /* ==================== 选择文本颜色 ==================== */
 ::selection {
-  background: rgba(16, 185, 129, 0.3);
+  background: rgba(249, 115, 22, 0.3);
   color: inherit;
 }
 
 .dark ::selection {
-  background: rgba(52, 211, 153, 0.3);
+  background: rgba(251, 146, 60, 0.3);
 }
 
 /* ==================== 图片缩放 (medium-zoom) ==================== */
@@ -381,11 +381,11 @@
 
 .vp-doc img:hover {
   transform: scale(1.02);
-  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 8px 30px rgba(249, 115, 22, 0.2);
 }
 
 .dark .vp-doc img:hover {
-  box-shadow: 0 8px 30px rgba(52, 211, 153, 0.15);
+  box-shadow: 0 8px 30px rgba(251, 146, 60, 0.15);
 }
 
 /* ==================== Mermaid 图表样式 ==================== */
@@ -393,10 +393,10 @@
   text-align: center;
   margin: 1.5rem 0;
   padding: 1rem;
-  background: rgba(16, 185, 129, 0.03);
+  background: rgba(249, 115, 22, 0.03);
   border-radius: 12px;
 }
 
 .dark .mermaid {
-  background: rgba(52, 211, 153, 0.05);
+  background: rgba(251, 146, 60, 0.05);
 }

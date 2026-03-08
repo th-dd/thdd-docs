@@ -8,7 +8,7 @@ hero:
   tagline: 📚 叹号旗下各类文档和笔记的集合站点
   actions:
     - theme: brand
-      text: 🚀 从此开始
+      text: 🚀 从这里开始
       link: /getting-started
     - theme: alt
       text: 🤖 叹号Bot 指令
@@ -19,7 +19,7 @@ hero:
 
 features:
   - icon: 🚀
-    title: 从此开始
+    title: 从这里开始
     details: 新手入门指南，快速了解如何使用叹号 Bot，包含基础指令和常用功能介绍
   - icon: 🤖
     title: 叹号Bot 指令
