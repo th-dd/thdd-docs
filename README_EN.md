@@ -4,7 +4,7 @@
 
 A collection site for various documents and notes from Thdd.
 
-[中文文档](README.md)
+[简体中文](README.md)
 
 ## 📚 Documentation List
 
@@ -36,4 +36,4 @@ This project is open-sourced under the [MIT](LICENSE) license.
 
 QQ Group: [1065333145](https://qm.qq.com/q/AtZk7q0y88)
 
-Made with ❤️ by Thdd
+Made with ❤️ by thdd
