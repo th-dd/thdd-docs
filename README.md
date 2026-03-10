@@ -2,7 +2,7 @@
 
 > 叹号大帝的文档站
 
-叹号旗下各类文档和笔记的集合站点，基于 VitePress 构建。
+叹号旗下各类文档和笔记的集合站点
 
 ## 📚 文档列表
 
@@ -18,13 +18,8 @@
 ### 环境要求
 
 - Node.js 24
-- pnpm 10
-
-## 📖 技术栈
-
-- [VitePress](https://vitepress.dev/) - 静态站点生成器
-- [pnpm](https://pnpm.io/) - 包管理器
-- [GitHub Pages](https://pages.github.com/) - 静态托管
+- pnpm 10 
+- VitePress 2.0.0-alpha
 
 ## 🤝 贡献指南
 
@@ -36,5 +31,7 @@
 本项目基于 [MIT](LICENSE) 许可协议开源。
 
 ---
+
+QQ 交流群：[1065333145](https://qm.qq.com/q/AtZk7q0y88)
 
 Made with ❤️ by 叹号大帝
