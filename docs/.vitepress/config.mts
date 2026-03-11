@@ -72,6 +72,7 @@ export default withMermaid(
         { text: '🚀 从这里开始', link: '/start' },
         { text: '🤖 叹号Bot', link: '/thbot-commands' },
         { text: '🚀 Nova Bot', link: '/nobot-commands' },
+        { text: '⚠️ 使用规范', link: '/usage-rules' },
       ],
       sidebar: [
         {
@@ -80,6 +81,7 @@ export default withMermaid(
             { text: '🚀 从这里开始', link: '/start' },
             { text: '🤖 叹号Bot 指令列表', link: '/thbot-commands' },
             { text: '🚀 Nova Bot 指令列表', link: '/nobot-commands' },
+            { text: '⚠️ 使用规范', link: '/usage-rules' },
           ]
         }
       ],
