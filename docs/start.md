@@ -16,7 +16,7 @@
 
 | Bot名称 | 描述 | 指令列表 | 
 | :--- | :--- | :--- | 
-| **问号大帝（生产环境）** | 含 AI 对话功能 | [Nova Bot 指令列表](/nobot-commands.md) |
+| **问号大帝（生产环境）** | 含 AI 对话功能 | [Nova Bot 指令列表](./nobot-commands.md) |
 | **句号大帝 （生产环境）** | 自动抓取每日热点新闻 | Python, Selenium | ![开发中](https://img.shields.io/badge/状态-开发中-yellow) |
 | **记账小程序** | 微信小程序版的记账应用 | TypeScript | ![已暂停](https://img.shields.io/badge/状态-已暂停-red) |
 
