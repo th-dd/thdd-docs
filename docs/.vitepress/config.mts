@@ -112,8 +112,8 @@ export default withMermaid(
         text: '✏️ 在 GitHub 上编辑此页'
       },
       footer: {
-        message: '基于 MIT 许可发布',
-        copyright: 'Copyright © 2026-present 叹号大帝'
+  message: '基于 MIT 许可发布 | <a href="https://icp.gov.moe/?keyword=20263888" target="_blank">萌ICP备20263888号</a>',
+  copyright: 'Copyright © 2026-present 叹号大帝'
       },
       docFooter: {
         prev: '上一页',
