@@ -28,12 +28,12 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10.11.1  # 使用稳定版，不是 next
+          version: 10.33.0
       # 使用LTS版 nodejs
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: 24  #2026-02-27 最新稳定板
+          node-version: 24
           cache: pnpm
 
       - name: Setup Pages
