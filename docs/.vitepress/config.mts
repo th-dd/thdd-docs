@@ -68,11 +68,8 @@ export default withMermaid(
       logo: '/logo.jpg',
       siteTitle: '叹号大帝',
       nav: [
-        { text: '🏠 首页', link: '/' },
+        { text: '主页', link: '/' },
         { text: '🚀 从这里开始', link: '/start' },
-        { text: '🤖 叹号Bot', link: '/thbot-commands' },
-        { text: '🚀 Nova Bot', link: '/nobot-commands' },
-        { text: '⚠️ 使用规范', link: '/usage-rules' },
       ],
       sidebar: [
         {
@@ -109,10 +106,10 @@ export default withMermaid(
       },
       editLink: {
         pattern: 'https://github.com/th-dd/thdd-docs/edit/main/docs/:path',
-        text: '✏️ 在 GitHub 上编辑此页'
+        text: '在 GitHub 上编辑此页'
       },
       footer: {
-  message: '基于 MIT 许可发布 | <a href="https://icp.gov.moe/?keyword=20263888" target="_blank">萌ICP备20263888号</a>',
+  message: '<a href="https://icp.gov.moe/?keyword=20263888" target="_blank">萌ICP备20263888号</a>',
   copyright: 'Copyright © 2026-present 叹号大帝'
       },
       docFooter: {
