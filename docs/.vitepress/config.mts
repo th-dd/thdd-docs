@@ -75,10 +75,9 @@ export default withMermaid(
         {
           text: '📖 文档',
           items: [
-            { text: '🚀 从这里开始', link: '/start' },
-            { text: '🤖 叹号Bot 指令列表', link: '/thbot-commands' },
-            { text: '🚀 Nova Bot 指令列表', link: '/nobot-commands' },
-            { text: '⚠️ 使用规范', link: '/usage-rules' },
+            { text: '从这里开始', link: '/start' },
+            { text: '叹号 Bot', link: '/bots' },
+            { text: '使用规范', link: '/usage-rules' },
           ]
         }
       ],
