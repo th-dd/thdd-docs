@@ -1,6 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import mediumZoom from 'medium-zoom'
-import { onMounted, watch, nextTick } from 'vue'
+import { onMounted, watch, nextTick, h } from 'vue'
 import { useRoute } from 'vitepress'
 import GitLastUpdated from './components/GitLastUpdated.vue'
 import './custom.css'
@@ -8,7 +8,9 @@ import './custom.css'
 export default {
   extends: DefaultTheme,
   Layout: () => {
-    return DefaultTheme.Layout
+    return h(DefaultTheme.Layout, null, {
+      'doc-footer-before': () => h(GitLastUpdated)
+    })
   },
   enhanceApp({ app }) {
     // 注册全局组件
