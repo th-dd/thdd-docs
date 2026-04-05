@@ -26,6 +26,6 @@ This project is open-sourced under the [MIT](LICENSE) license.
 
 ---
 
-QQ Group: [1065333145](https://qm.qq.com/q/AtZk7q0y88)
+QQ Group: [993517629](https://qm.qq.com/q/GalJVVRLWK)
 
 Made with ❤️ by thdd
