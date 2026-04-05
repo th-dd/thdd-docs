@@ -26,6 +26,6 @@
 
 ---
 
-QQ 交流群：[1065333145](https://qm.qq.com/q/AtZk7q0y88)
+QQ 交流群：[993517629](https://qm.qq.com/q/GalJVVRLWK)
 
 Made with ❤️ by 叹号大帝
