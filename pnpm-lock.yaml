@@ -12,10 +12,10 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       vitepress:
-        specifier: 2.0.0-alpha.16
-        version: 2.0.0-alpha.16(postcss@8.5.6)
+        specifier: 2.0.0-alpha.17
+        version: 2.0.0-alpha.17(postcss@8.5.6)
       vitepress-plugin-group-icons:
-        specifier: ^1.6.3
+        specifier: ^1.7.1
         version: 1.7.1(vite@7.3.1)
       vitepress-plugin-mermaid:
         specifier: ^2.0.17
