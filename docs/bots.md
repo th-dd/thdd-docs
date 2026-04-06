@@ -22,4 +22,4 @@
 
 ## 更新日志
 
-请见 [Bot 更新日志](./bot-updates.md)
+请见 [Bot 更新日志](./bots-updates.md)
