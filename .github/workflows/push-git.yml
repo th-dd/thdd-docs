@@ -1,0 +1,28 @@
+name: 推送代码到Gitee
+
+on:
+  push:
+    branches:
+      - main # 如果你用的不是main分支，比如是master，请改成master
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0 # 必须写这个，拉取全部历史，否则会报错
+
+      - name: 配置 SSH 密钥
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.GITEE_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+
+      - name: 推送到 Gitee
+        run: |
+          # ⚠️ 下面这一行，请把【你的Gitee用户名】和【你的Gitee仓库名】替换成真实的！
+          git remote add gitee git@gitee.com:ya2/thdd-docs.git
+          git push gitee main --force # 如果你的分支是master，这里也改成master
