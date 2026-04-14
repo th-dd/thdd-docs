@@ -11,7 +11,7 @@ A collection site for various documents and notes from Thdd.
 | Document | Description |
 |----------|-------------|
 | [叹号 Bot Commands](docs/thbot-commands.md) | 叹号 Bot command list, including group management, entertainment, AI and other features |
-| [Nova Bot Commands](docs/nobot-commands.md) | Nova Bot command list, including group management, entertainment, AI and other features |
+| [Lar Bot Commands](docs/larbot-commands.md) | Lar Bot command list, including group management, entertainment, AI and other features |
 
 🔗 Online Access: [https://docs.th-dd.top](https://docs.th-dd.top)
 
