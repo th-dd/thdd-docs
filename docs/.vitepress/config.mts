@@ -77,7 +77,6 @@ export default withMermaid(
           items: [
             { text: '从这里开始', link: '/start' },
             { text: '叹号 Bot', link: '/bots' },
-            { text: '使用规范', link: '/usage-rules' },
           ]
         }
       ],
