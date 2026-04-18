@@ -6,13 +6,6 @@ A collection site for various documents and notes from Thdd.
 
 [简体中文](README.md)
 
-## 📚 Documentation List
-
-| Document | Description |
-|----------|-------------|
-| [叹号 Bot Commands](docs/thbot-commands.md) | 叹号 Bot command list, including group management, entertainment, AI and other features |
-| [Lar Bot Commands](docs/larbot-commands.md) | Lar Bot command list, including group management, entertainment, AI and other features |
-
 🔗 Online Access: [https://docs.th-dd.top](https://docs.th-dd.top)
 
 ## 🤝 Contributing
@@ -22,7 +15,7 @@ A collection site for various documents and notes from Thdd.
 
 ## 📄 License
 
-This project is open-sourced under the [MIT](LICENSE) license.
+[MIT](LICENSE)
 
 ---
 
