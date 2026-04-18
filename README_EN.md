@@ -4,7 +4,7 @@
 
 A collection site for various documents and notes from Thdd.
 
-[简体中文](README.md)
+[简体中文](README.md)丨English
 
 🔗 Online Access: [https://docs.th-dd.top](https://docs.th-dd.top)
 
