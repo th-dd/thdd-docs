@@ -2,7 +2,7 @@
 
 > 叹号大帝的文档站
 
-[English](README_EN.md) | 简体中文
+简体中文丨[English](README_EN.md)
 
 叹号旗下各类文档和笔记的集合站点
 
