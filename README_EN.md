@@ -2,7 +2,7 @@
 
 > Thdd Documentation Site
 
-A collection site for various documents and notes from Thdd.
+A collection site for various documents and notes from thdd.
 
 [简体中文](README.md)丨English
 
