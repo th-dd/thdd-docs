@@ -1,9 +1,10 @@
 # Lar Bot 指令列表
 
-## 叹号框架指令
-请参考 [叹号Bot](./thbot-commands.md) 指令列表
-
 ---
+
+::: details 点击此处查看本页目录
+[[toc]]
+:::
 
 ## Lar 框架指令
 
