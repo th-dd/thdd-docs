@@ -3,16 +3,16 @@ name: 推送代码到Gitee
 on:
   push:
     branches:
-      - main # 如果你用的不是main分支，比如是master，请改成master
+      - main
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - name: 拉取代码
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 必须写这个，拉取全部历史，否则会报错
+          fetch-depth: 0
 
       - name: 配置 SSH 密钥
         run: |
@@ -20,9 +20,27 @@ jobs:
           echo "${{ secrets.GITEE_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+          # 优化 SSH 连接配置，防止超时
+          cat >> ~/.ssh/config <<EOF
+          Host gitee.com
+            HostName gitee.com
+            User git
+            ServerAliveInterval 30
+            ServerAliveCountMax 10
+            ConnectTimeout 30
+          EOF
 
       - name: 推送到 Gitee
         run: |
-          # ⚠️ 下面这一行，请把【你的Gitee用户名】和【你的Gitee仓库名】替换成真实的！
           git remote add gitee git@gitee.com:ya2/thdd-docs.git
-          git push gitee main --force # 如果你的分支是master，这里也改成master
+          # 增加重试机制
+          for i in 1 2 3; do
+            if git push gitee main --force; then
+              echo "✅ Push succeeded on attempt $i"
+              exit 0
+            fi
+            echo "⚠️ Attempt $i failed, retrying in 10s..."
+            sleep 10
+          done
+          echo "❌ All attempts failed"
+          exit 1
