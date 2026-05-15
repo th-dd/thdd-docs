@@ -1,6 +1,6 @@
-# thdd-docs
+# [thdd-docs](https://docs.th-dd.top)
 
-> Thdd Documentation Site
+> thdd Documentation Site
 
 A collection site for various documents and notes from thdd.
 
