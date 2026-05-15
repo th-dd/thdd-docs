@@ -12,12 +12,12 @@ hero:
   actions:
     - theme: brand
       text: 🚀 快速开始
-      link: /start
+      link: /guide/start
 
 features:
   - icon: ⚠️
     title: 叹号大帝
     details: 叹号大帝thdd
-    link: /start
+    link: /guide/start
     linkText: 点击跳转开始页面
 ---

@@ -69,14 +69,22 @@ export default withMermaid(
       siteTitle: '叹号大帝',
       nav: [
         { text: '主页', link: '/' },
-        { text: '🚀 从这里开始', link: '/start' },
+        { text: '🚀 从这里开始', link: '/guide/start' },
       ],
       sidebar: [
         {
-          text: '📖 文档',
+          text: '📖 指南',
           items: [
-            { text: '从这里开始', link: '/start' },
-            { text: '叹号 Bot', link: '/bots' },
+            { text: '从这里开始', link: '/guide/start' },
+          ]
+        },
+        {
+          text: '🤖 叹号 Bot',
+          items: [
+            { text: 'Bot 简介', link: '/bots/bots' },
+            { text: 'Lar Bot 指令', link: '/bots/larbot-commands' },
+            { text: '叹号 Bot 指令', link: '/bots/thbot-commands' },
+            { text: '更新日志', link: '/bots/bots-updates' },
           ]
         }
       ],

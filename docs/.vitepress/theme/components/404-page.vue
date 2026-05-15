@@ -8,14 +8,17 @@ const goHome = () => {
 }
 </script>
 
+
 <template>
     <div class="NotFound">
-        <img src="/docs/public/404-page.png" alt="404 Not Found" class="not-found-image" />
+        <img src="/logo.jpg" alt="叹号大帝 Logo" class="not-found-logo" />
+        <img src="/404-page.png" alt="404 Not Found" class="not-found-image" />
         <h1 class="not-found-title">页面不存在！</h1>
         <p class="not-found-desc">你是不是迷路了？点下方按钮带你回家</p>
         <button @click="goHome" class="not-found-button">返回首页</button>
     </div>
 </template>
+
 
 <style scoped>
 .NotFound {
@@ -26,6 +29,20 @@ const goHome = () => {
     align-items: center;
     justify-content: center;
     min-height: 60vh;
+}
+
+.not-found-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.not-found-logo:hover {
+    transform: rotate(-10deg) scale(1.1);
 }
 
 .not-found-image {
@@ -62,6 +79,11 @@ const goHome = () => {
 }
 
 @media (max-width: 768px) {
+    .not-found-logo {
+        width: 60px;
+        height: 60px;
+    }
+
     .not-found-image {
         max-width: 300px;
     }
